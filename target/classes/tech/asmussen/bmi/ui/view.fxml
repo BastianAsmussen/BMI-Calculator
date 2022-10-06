@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.asmussen.bmi.ui.GUIController">
+	<AnchorPane prefHeight="400.0" prefWidth="600.0">
+		<Label layoutX="14.0" layoutY="66.0" text="Højde">
+			<font>
+				<Font size="26.0" />
+			</font>
+		</Label>
+		<Label layoutX="17.0" layoutY="181.0" text="Vægt">
+			<font>
+				<Font size="26.0" />
+			</font>
+		</Label>
+		<Label layoutX="25.0" layoutY="296.0" text="Køn">
+			<font>
+				<Font size="26.0" />
+			</font>
+		</Label>
+		<TextField fx:id="heightField" layoutX="126.0" layoutY="73.0" prefHeight="25.0" prefWidth="128.0" promptText="Højde i meter." />
+		<TextField fx:id="weightField" layoutX="126.0" layoutY="188.0" prefHeight="25.0" prefWidth="128.0" promptText="Vægt i kilogram." />
+		<ComboBox fx:id="genderBox" layoutX="126.0" layoutY="303.0" prefHeight="25.0" prefWidth="128.0" />
+		<Button layoutX="288.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#onCalculateButtonClicked" prefHeight="47.0" prefWidth="284.0" text="Udregn BMI" />
+		<TitledPane animated="false" layoutX="285.0" layoutY="181.0" text="Vægt klasser">
+			<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="126.0" prefWidth="288.0">
+				<Label layoutX="200.0" layoutY="14.0" text="Kvinde"/>
+				<Label layoutX="135.0" layoutY="14.0" text="Mænd"/>
+				<Label layoutX="14.0" layoutY="41.0" text="Undervægtige"/>
+				<Label layoutX="14.0" layoutY="58.0" text="Normalvægtige"/>
+				<Label layoutX="14.0" layoutY="75.0" text="Overvægtige"/>
+				<Label layoutX="14.0" layoutY="92.0" text="Stærkt overvægtige"/>
+				<Label layoutX="139.0" layoutY="41.0" text="&lt;20"/>
+				<Label layoutX="137.0" layoutY="58.0" text="20-25"/>
+				<Label layoutX="137.0" layoutY="75.0" text="25-30"/>
+				<Label layoutX="137.0" layoutY="92.0" text="&gt;30"/>
+				<Label layoutX="205.0" layoutY="41.0" text="&lt;18,6"/>
+				<Label layoutX="203.0" layoutY="58.0" text="18,6-23,8"/>
+				<Label layoutX="203.0" layoutY="75.0" text="23,8-28,6"/>
+				<Label layoutX="203.0" layoutY="92.0" text="&gt;28,6"/>
+			</AnchorPane>
+		</TitledPane>
+	</AnchorPane>
+</VBox>
